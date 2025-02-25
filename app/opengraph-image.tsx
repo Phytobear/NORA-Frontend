@@ -19,11 +19,11 @@ export default async function Image() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        color: "#0284C7", // Primary color from our theme
+        color: "#0284C7", // primary color from our theme
       }}
     >
       <div style={{ fontSize: "128px", fontWeight: "bold" }}>NORA Portal</div>
-      <div style={{ fontSize: "48px", marginTop: "20px", color: "#64748B" }}>Healthcare Management Solution</div>
+      <div style={{ fontSize: "48px", marginTop: "20px", color: "#64748B" }}>Healthcare Management</div>
     </div>,
     {
       ...size,

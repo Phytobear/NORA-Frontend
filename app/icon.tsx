@@ -18,7 +18,7 @@ export default function Icon() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        color: "#0284C7", // Primary color from our theme
+        color: "#0284C7", // primary color from our theme
       }}
     >
       N
