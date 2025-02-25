@@ -20,6 +20,7 @@ export default function DashboardLayout({
     },
   ])
 
+  // Dismiss an alert
   const dismissAlert = (id: string) => {
     setAlerts((current) => current.filter((alert) => alert.id !== id))
   }

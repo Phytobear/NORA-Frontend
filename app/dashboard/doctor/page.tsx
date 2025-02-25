@@ -5,6 +5,7 @@ import { PatientRecords } from "@/components/doctor/patient-records"
 import { FallsHistory } from "@/components/patient/falls-history"
 import { PatientDetails } from "@/components/doctor/patient-details"
 
+// DoctorPage component
 export default function DoctorPage() {
   return (
     <div className="space-y-6 p-4 md:space-y-8 md:p-6" role="main" aria-label="Doctor Dashboard">

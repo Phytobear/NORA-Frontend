@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
 import { User2 } from "lucide-react"
 
+// CaregiverPage component
 export default function CaregiverPage() {
   const router = useRouter()
 
