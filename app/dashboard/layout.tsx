@@ -15,7 +15,7 @@ export default function DashboardLayout({
     {
       id: "1",
       level: "critical" as const,
-      title: "Urgent Medical Update",
+      title: "Urgent Update",
       message: "A fall has been detected",
     },
   ])
