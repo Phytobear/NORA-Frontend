@@ -19,7 +19,7 @@ export function DocumentUploadForm() {
     <Card>
       <CardHeader>
         <CardTitle>Upload Documents</CardTitle>
-        <CardDescription>Please upload the necessary medical documents</CardDescription>
+        <CardDescription>Please upload medical documents</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         <DocumentUpload />
