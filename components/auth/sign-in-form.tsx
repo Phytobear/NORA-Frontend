@@ -32,7 +32,7 @@ export function SignInForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       setIsLoading(true)
-      // Simulate successful login for demo purposes
+      // login for demo ONLY
       await new Promise((resolve) => setTimeout(resolve, 1000))
       router.push("/dashboard")
     } catch (error) {
@@ -69,7 +69,7 @@ export function SignInForm() {
           name="password"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="dark:text-white">Password</FormLabel>
+              <FormLabel className="dark:text-white">Pasword</FormLabel>
               <FormControl>
                 <Input
                   placeholder="Enter your password"
@@ -100,7 +100,7 @@ export function SignInForm() {
             {isLoading ? "Signing in..." : "Sign In"}
           </Button>
           <Button variant="link" className="px-0 dark:text-white">
-            Forgot password?
+            Forgot pasword?
           </Button>
         </div>
       </form>
