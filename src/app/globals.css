@@ -2,20 +2,114 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Light mode - keeping #0078d4 */
+    --primary: 207 100% 42%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 207 100% 97%;
+    --secondary-foreground: 207 100% 42%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Updating border and input colors for better visibility */
+    --border: 215 25% 75%;
+    --input: 215 25% 75%;
+    --ring: 207 100% 42%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark mode - using new colors */
+    --background: 252 75% 17%; /* #1E0B4B */
+    --foreground: 44 100% 50%; /* #FFB800 */
+
+    --card: 252 75% 17%;
+    --card-foreground: 44 100% 50%; /* #FFB800 */
+
+    --popover: 252 75% 17%;
+    --popover-foreground: 44 100% 50%; /* #FFB800 */
+
+    --primary: 252 75% 17%;
+    --primary-foreground: 44 100% 50%; /* #FFB800 */
+
+    --secondary: 252 75% 27%;
+    --secondary-foreground: 44 100% 50%; /* #FFB800 */
+
+    --muted: 252 75% 12%;
+    --muted-foreground: 44 100% 50%; /* #FFB800 */
+
+    --accent: 44 100% 50%; /* #FFB800 */
+    --accent-foreground: 252 75% 17%;
+
+    --destructive: 0 100% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 44 100% 50%; /* #FFB800 */
+    --input: 44 100% 50%; /* #FFB800 */
+    --ring: 44 100% 50%; /* #FFB800 */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
+
+@layer utilities {
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(0.95);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 0.3;
+    }
+    100% {
+      transform: scale(0.95);
+      opacity: 0.7;
+    }
+  }
+
+  .animate-pulse-ring-1 {
+    @apply border-2 border-red-500;
+    animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation-delay: 0s;
+  }
+
+  .animate-pulse-ring-2 {
+    @apply border-2 border-red-500;
+    animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation-delay: 0.5s;
+  }
+
+  .animate-pulse-ring-3 {
+    @apply border-2 border-red-500;
+    animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation-delay: 1s;
+  }
+}
+
