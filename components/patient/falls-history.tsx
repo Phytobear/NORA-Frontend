@@ -3,7 +3,7 @@
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { cn } from "@/lib/utils"
 
-// Example data - in a real app this would come from your backend
+// eample data
 const falls = [
   {
     id: 1,
