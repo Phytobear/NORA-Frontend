@@ -12,12 +12,12 @@ import { Input } from "@/components/ui/input"
 
 const formSchema = z.object({
   email: z.string().email(),
-  password: z.string().min(8),
+  password: z.string().min(9),
   role: z.enum(["patient", "caregiver", "medical"]),
   fullName: z.string().min(2),
   dateOfBirth: z.string().optional(),
-  address: z.string().min(5),
-  phone: z.string().min(10),
+  address: z.string().min(6),
+  phone: z.string().min(11),
   relationshipToPatient: z.string().optional(),
   medicalLicense: z.string().optional(),
 })
