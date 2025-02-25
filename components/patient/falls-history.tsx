@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 const falls = [
   {
     id: 1,
-    date: "2024-02-25",
+    date: "2024-02-24",
     time: "14:30",
     location: "Living Room",
     severity: "Severe",

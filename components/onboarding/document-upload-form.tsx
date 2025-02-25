@@ -18,8 +18,8 @@ export function DocumentUploadForm() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Upload Required Documents</CardTitle>
-        <CardDescription>Please upload the necessary medical documents to complete your registration</CardDescription>
+        <CardTitle>Upload Documents</CardTitle>
+        <CardDescription>Please upload the necessary medical documents</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         <DocumentUpload />
