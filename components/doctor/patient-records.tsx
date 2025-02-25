@@ -16,7 +16,7 @@ const patients = [
   },
   {
     id: "P002",
-    name: "Logan Smith",
+    name: "Logan",
     age: 39,
     lastVisit: "2024-02-23",
     condition: "Improving",
@@ -24,15 +24,15 @@ const patients = [
   },
   {
     id: "P003",
-    name: "Hayden Johnson",
+    name: "Hayden",
     age: 68,
     lastVisit: "2024-02-20",
     condition: "Stable",
-    fallRisk: "Extremely High",
+    fallRisk: "Enevitble",
   },
   {
     id: "P004",
-    name: "Corey Davis",
+    name: "Corey",
     age: 75,
     lastVisit: "2024-02-18",
     condition: "Needs Review",
@@ -40,7 +40,7 @@ const patients = [
   },
   {
     id: "P005",
-    name: "Toby Bennett",
+    name: "Toby",
     age: 51,
     lastVisit: "2024-02-15",
     condition: "Stable",

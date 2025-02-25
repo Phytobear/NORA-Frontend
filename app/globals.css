@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Light mode - keeping #0078d4 */
+    /* Light mode? */
     --primary: 207 100% 42%;
     --primary-foreground: 210 40% 98%;
 
@@ -29,7 +29,6 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    /* Updating border and input colors for better visibility */
     --border: 215 25% 75%;
     --input: 215 25% 75%;
     --ring: 207 100% 42%;
@@ -38,7 +37,7 @@
   }
 
   .dark {
-    /* Dark mode - using new colors */
+    /* Dark mode - using highcontrast colours */
     --background: 252 75% 17%; /* #1E0B4B */
     --foreground: 44 100% 50%; /* #FFB800 */
 
