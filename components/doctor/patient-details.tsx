@@ -5,14 +5,14 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 export function PatientDetails() {
   const patientDetails = {
     name: "Elizabeth Connor",
-    dateOfBirth: "1959-05-15",
+    dateOfBirth: "1921-05-15",
     gender: "Female",
     bloodType: "A+",
-    height: "165 cm",
-    weight: "68 kg",
-    allergies: ["Penicillin", "Latex"],
-    medications: ["Lisinopril 10mg - Daily", "Metformin 500mg - Twice daily", "Vitamin D3 - Daily"],
-    conditions: ["Type 2 Diabetes", "Hypertension", "Osteoarthritis"],
+    height: "190 cm",
+    weight: "102 kg",
+    allergies: ["Penicilin", "Latex"],
+    medications: ["Madeuparoll 10mg - Daily", "Lupinium 500mg - Twice daily", "Vitamin D - Daily"],
+    conditions: ["Type 2 Diabetes", "Hypertension", "Fear of Falling"],
   }
 
   return (
