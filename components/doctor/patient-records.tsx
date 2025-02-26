@@ -28,7 +28,7 @@ const patients = [
     age: 68,
     lastVisit: "2024-02-20",
     condition: "Stable",
-    fallRisk: "Enevitble",
+    fallRisk: "Inevitable",
   },
   {
     id: "P004",
