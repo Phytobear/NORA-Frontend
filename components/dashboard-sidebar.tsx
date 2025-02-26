@@ -33,8 +33,8 @@ export function DashboardSidebar({ className }: SidebarProps) {
     >
       <div className="flex items-center h-14 border-b border-white/20 px-6">
         <div className="flex flex-col">
-          <div className="flex justify-between">
-            <Image src="./logo.png" width="60" height="60" alt="logo" />
+          <div className="flex justify-between items-center">
+            <Image src="./logo.png" width="30" height="30" alt="logo" />
             <h2 className="text-lg font-semibold">NORA</h2>
           </div>
           <p className="text-xs">Healthcare Portal</p>
