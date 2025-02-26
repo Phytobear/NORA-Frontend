@@ -1,25 +1,26 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Home, User2, Users, Stethoscope } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { ScrollArea } from "@/components/ui/scroll-area"
-import { cn } from "@/lib/utils"
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Home, User2, Users, Stethoscope } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface SidebarProps {
-  className?: string
+  className?: string;
 }
 
 export function DashboardSidebar({ className }: SidebarProps) {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   const navigation = [
     { name: "Dashboard", href: "/dashboard", icon: Home },
     { name: "Patient", href: "/dashboard/patient", icon: User2 },
     { name: "Caregiver", href: "/dashboard/caregiver", icon: Users },
     { name: "Doctor", href: "/dashboard/doctor", icon: Stethoscope },
-  ]
+  ];
 
   return (
     <div
@@ -27,19 +28,27 @@ export function DashboardSidebar({ className }: SidebarProps) {
         "flex h-screen flex-col",
         "bg-[#0078d4] text-white",
         "dark:bg-[#0078d4] dark:text-[#FFB800]",
-        className,
+        className
       )}
     >
       <div className="flex items-center h-14 border-b border-white/20 px-6">
         <div className="flex flex-col">
-          <h2 className="text-lg font-semibold">NORA</h2>
+          <div className="flex justify-between">
+            <Image
+              src="./public/logo.png"
+              width="60px"
+              height="60px"
+              alt="logo"
+            />
+            <h2 className="text-lg font-semibold">NORA</h2>
+          </div>
           <p className="text-xs">Healthcare Portal</p>
         </div>
       </div>
       <ScrollArea className="flex-1">
         <nav className="flex flex-col gap-2 p-4">
           {navigation.map((item) => {
-            const Icon = item.icon
+            const Icon = item.icon;
             return (
               <Button
                 key={item.name}
@@ -51,19 +60,21 @@ export function DashboardSidebar({ className }: SidebarProps) {
                   pathname === item.href && [
                     "bg-white/20 hover:bg-white/20",
                     "dark:bg-[#1E0B4B]/40 dark:hover:bg-[#1E0B4B]/40",
-                  ],
+                  ]
                 )}
               >
-                <Link href={item.href} className="flex items-center gap-2 w-full">
+                <Link
+                  href={item.href}
+                  className="flex items-center gap-2 w-full"
+                >
                   <Icon className="h-4 w-4" />
                   {item.name}
                 </Link>
               </Button>
-            )
+            );
           })}
         </nav>
       </ScrollArea>
     </div>
-  )
+  );
 }
-
